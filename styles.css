@@ -1,3 +1,10 @@
+::selection {
+    /* Change highlight background color to black */
+    background: rgb(215, 116, 62);
+    /* Change highlight text color to red */
+    color: white;
+}
+
 * {
     font-family: Georgia;
     box-sizing: border-box;
