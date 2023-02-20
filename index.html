@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan's Personal Website</title>
+    <author>Ethan Tam</author>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Hi, I'm Ethan.</h1>
+
+    <a style="text-decoration: none;"class="button" href="projects.html">projects</a>
+    <a style="text-decoration: none;"class="button" class="button" target="_blank" href="https://www.linkedin.com/in/ethantam5133/">linkedin</a>
+    <a style="text-decoration: none;"class="button" class="button" target="_blank" href="https://docs.google.com/document/d/1C3698QmSla2LsDsUnRm-7auvQK9OC3zx5olT4sLzVeg/edit?usp=share_link">resume</a>
+    <a style="text-decoration: none;"class="button" class="button" href="photography.html">photography</a>
+
+
+    <img src="me.jpeg" alt="me!" height="500" style="float:right; border: 10px solid rgb(215, 116, 62);">
+
+    <p id="makewhite">I'm a first-year at UC Berkeley studying Computer Science and Statistics. 
+        My current interests lie in the applications of machine learning, software engineering, 
+        and computer vision in industry and research.</p>
+    
+    <h3 class="makeorange">Currently, I'm a:</h3>
+    
+    <ul>
+        <li>SWE Fellow @ Uber</li>
+        <li>SWE Intern @ UC Berkeley's Basic Needs Center</li>
+        <li>Incoming ML Researcher at Janelia Research Campus this summer!</li>
+    </ul>
+
+    <h4>Previously, I was a:</h4>
+    
+    <ul>
+        <li>ML Intern in the Cattamanchi Lab @ UCSF</li>
+        <li>Student Researcher in the Laskowski Lab @ UC Davis</li>
+    </ul>
+
+    <h4>Some fun facts about me:</h4>
+
+    <ul>
+        <li>I'm the first in my family to study STEM!</li>
+        <li>Aside from school, I'm passionate about teaching CS to kids through <a href="https://www.berkeleyanova.org/" target="_blank">ANova</a>.</li>
+        <li>I love baking.</li>
+    </ul>
+
+    <h2 id="fontGeorgia">Contact Info:</h2>
+
+    <ul>
+        <li style="font-size:20px">email: ethantam@berkeley.edu</li>
+        <li style="font-size:20px">instagram: ethanjet.tam</li>
+    </ul>
+
+    <h5>What is my favorite animal?</h5>
+    <form id="myForm">
+        <label style="color:rgb(215, 116, 62)">Answer:</label>
+        <input type="text" id="answer">
+        <br>
+        <br>
+        <input id="submitForm" type="submit">
+        <script>
+            document.getElementById("submitForm").addEventListener("click", function (event) {
+                const input = answer.value;
+                if (input == "capybara") {
+                    alert("YES!");
+                } else {
+                    alert(`A ${input} is not my favorite animal.`);
+                }
+            });
+        </script>
+    </form>
+
+    <h6 style="font-weight: normal" id="makewhite">website made by me :)</h6>
+</body>
+</html>
